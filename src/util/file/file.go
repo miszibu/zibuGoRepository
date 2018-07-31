@@ -48,8 +48,8 @@ func CreateFile(filePath string) (*os.File,error){
 
 /*
  * 检查文件夹是否存在 若不存在则创建该文件夹
-* @param filepath 文件目录
-* @return error：nil成功
+ * @param filepath 文件目录
+ * @return error：nil成功
  */
 func CheckAndCreateFilePath(filePath string) (error) {
 	filePath = filePath+time.Now().Format("2006-01-02")
